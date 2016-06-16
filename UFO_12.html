@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<Head>  Java Script not WORKING  </Head>
+<script>
+
+var xPos = 100;//position of sml streak
+var yPos = 200;
+var xaPos =350;// potion of lrg streak
+var yaPos = 389;
+var xrPos = 335;
+var yrPos = 35;
+var x= 10;// car postion
+var xc= 115;
+noStroke();
+
+
+
+draw = function() {
+    background(29, 40, 115);
+
+
+
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 10, 10);//sml streak
+    xPos+= 6;
+   yPos -=7;
+   ellipse (xaPos, yaPos,20,20);//lrg streak
+   xaPos -= 10;
+   yaPos -= 15;
+    fill(9, 237, 127);
+   ellipse(xrPos,yrPos,25,15);
+   fill(255, 0, 0);
+   ellipse(xrPos+1,yrPos+1,10,5);
+   xrPos -=5;
+   yrPos +=0.2;
+
+   fill(122, 130, 128);
+    rect(25,100,60,290);//skyscraper
+    rect(87,50,60,325);
+
+    fill(255, 0, 115);
+rect(x, 360, 100, 20);
+rect(x + 15, 349, 70, 40);
+fill(77, 66, 66);
+
+ellipse(x + 25, 385, 24, 24);
+ellipse(x + 75, 385, 24, 24);//car movement
+x+=2;
+fill(255, 242, 0);// window lights
+ rect(27,110,5,5);
+ rect(35,135,5,5);
+ rect(60,125,5,5);
+ rect(100,85,5,5);
+ rect(115,110,5,5);
+ fill(255, 0, xc);
+ rect(87,50,60,3);
+ xc+= 10;
+};
+
+
+
+</script>
+
+</body>
+</html>
+
+
